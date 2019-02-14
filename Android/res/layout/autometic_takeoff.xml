@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:id="@+id/wpNameDetails"
+    android:layout_height="match_parent">
+
+
+    <EditText
+        android:id="@+id/alt_miter"
+        android:layout_marginTop="80dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="343dp"
+        android:inputType="numberDecimal"
+        android:layout_height="wrap_content" />
+    <EditText
+        android:id="@+id/duration_time"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="343dp"
+        android:inputType="numberDecimal"
+        android:layout_height="wrap_content" />
+    <Button
+        android:id="@+id/auto_takeoff"
+        android:text="TAKEOFF"
+        android:textStyle="bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+</LinearLayout>
