@@ -49,9 +49,7 @@ dependencies {
     }
     implementation 'org.adw.library:discrete-seekbar:1.0.1'
 }
-
 def versionPrefix = "EagleEye-v"
-
 //Decomposed version name and code (https://plus.google.com/+JakeWharton/posts/6f5TcVPRZij)
 def versionMajor = 0
 def versionMinor = 0

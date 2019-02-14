@@ -61,7 +61,6 @@ class WidgetsListPrefFragment : DialogFragment() {
 
             viewHolder.prefCheck?.setOnCheckedChangeListener(null)
             viewHolder.prefCheck?.isChecked = appPrefs.isWidgetVisible(towerWidget)
-            //viewHolder.prefCheck?.isChecked = false//appPrefs.isWidgetVisible(towerWidget)
             viewHolder.prefCheck?.setOnCheckedChangeListener { compoundButton, b ->
                 appPrefs.enableWidget(towerWidget, b)
                 lbm.sendBroadcast(Intent(SettingsFragment.ACTION_WIDGET_PREFERENCE_UPDATED)

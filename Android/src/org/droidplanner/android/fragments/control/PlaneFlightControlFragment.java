@@ -247,8 +247,7 @@ public class PlaneFlightControlFragment extends BaseFlightControlFragment {
 
     private void setupButtonsForDisconnected() {
         resetButtonsContainerVisibility();
-        //mDisconnectedButtons.setVisibility(View.VISIBLE);
-        mDisconnectedButtons.setVisibility(View.GONE);
+        mDisconnectedButtons.setVisibility(View.VISIBLE);
     }
 
     private void setupButtonsForDisarmed() {

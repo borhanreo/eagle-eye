@@ -88,7 +88,7 @@ enum class TowerWidgets(@IdRes val idRes: Int, @StringRes val labelResId: Int, @
 
     protected open fun internalIsVisibleByDefault() = false
 
-    protected open fun isEnabled() = false
+    protected open fun isEnabled() = true
 
     open fun getMaximizedFragment(): TowerWidget? = null
 

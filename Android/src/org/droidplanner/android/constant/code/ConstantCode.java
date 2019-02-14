@@ -131,7 +131,6 @@ public class ConstantCode {
     public static  String ultraSonicEnable = "200";
     public static  String ultraSonicDisable = "201";
     public static  String automatic_takeoff_time_duration = "203";
-    public static  String DEFAULT_RC_OVERRIDE = "204";
 
     public static String CHANNEL_0 = "channel_0";
     public static String CHANNEL_1 = "channel_1";

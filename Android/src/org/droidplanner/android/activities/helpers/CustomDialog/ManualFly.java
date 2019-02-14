@@ -13,7 +13,6 @@ import android.widget.EditText;
 import android.widget.Spinner;
 
 import org.adw.library.widgets.discreteseekbar.DiscreteSeekBar;
-import org.droidplanner.android.IndoorAutotakeoff;
 import org.droidplanner.android.R;
 import org.droidplanner.android.SocketDataReceiver;
 import org.droidplanner.android.activities.helpers.JsonBuilder;
@@ -27,7 +26,6 @@ import org.json.JSONObject;
  * Created by Borhan Uddin on 7/18/2018.
  */
 public class ManualFly extends Dialog {
-    private IndoorAutotakeoff indoorAutotakeoff=new IndoorAutotakeoff();
     public Activity c;
     private Context context = getContext();
     private String TAG = "ferdib ManualFly";
@@ -46,7 +44,7 @@ public class ManualFly extends Dialog {
     private int middleValue = 420;
     DiscreteSeekBar discreteSeekBarPitch, discreteSeekBarRoll, discreteSeekBarThrottle, discreteSeekBarYaw, discreteSeekBarRadio5, discreteSeekBarRadio6, discreteSeekBarRadio7, discreteSeekBarRadio8;
     private int channel_0 = 420, channel_1 = 420, channel_2 = 307, channel_3 = 420, channel_4 = 307, channel_5 = 307, channel_6 = 307, channel_7 = 307;
-    private Button stabilize, guided, land, armed, disarmed, auto, procress50, objDetect, throttle_in, throttle_de, roll_inc, roll_dec, pitch_inc, pitch_dec, yaw_inc, yaw_dec,autofly,resetvalue;
+    private Button stabilize, guided, land, armed, disarmed, auto, procress50, objDetect, throttle_in, throttle_de, roll_inc, roll_dec, pitch_inc, pitch_dec, yaw_inc, yaw_dec;
 
     int count = 0, throttle_toggle_button_count = 0;
     int ultraCount = 0;
@@ -183,29 +181,7 @@ public class ManualFly extends Dialog {
         pitch_dec = (Button) findViewById(R.id.pitch_dec);
         yaw_inc = (Button) findViewById(R.id.yaw_inc);
         yaw_dec = (Button) findViewById(R.id.yaw_dec);
-        autofly = (Button) findViewById(R.id.auto_fly);
-        resetvalue = (Button) findViewById(R.id.reset_value);
-        resetvalue.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
 
-                try {
-                    SocketDataReceiver.attemptSend(indoorAutotakeoff.jsonSetDefaultValue().toString());
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
-        autofly.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                try {
-                    SocketDataReceiver.attemptSend(indoorAutotakeoff.jsonAutoTakeoffIndoor("1.2","10").toString());
-                } catch (JSONException e) {
-                    e.printStackTrace();
-                }
-            }
-        });
         pitch_inc.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -282,7 +258,6 @@ public class ManualFly extends Dialog {
                 String objCommand = "{\"u\":\"g\",\"135\":\"174\"}";
                 SocketDataReceiver.attemptSend(objCommand);
                 count = 1;
-
             }
         });
 

@@ -33,8 +33,6 @@ class GoogleMapPrefFragment : MapProviderPreferences(), EditInputDialog.Listener
         val MAP_TYPE_NORMAL = "normal"
         val MAP_TYPE_TERRAIN = "terrain"
 
-
-
         val PREF_TILE_PROVIDERS = "pref_google_map_tile_providers"
 
         const val PREF_TILE_PROVIDER_SETTINGS_SCREEN = "pref_tile_provider_settings"

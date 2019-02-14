@@ -199,41 +199,6 @@
                 android:id="@+id/obj_en"
                 android:text="En/Den" />
         </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/green"
-                android:id="@+id/auto_fly"
-                android:layout_weight="0.25"
-                android:text="Auto FLY" />
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/green"
-                android:id="@+id/reset_value"
-                android:layout_weight="0.25"
-                android:text="Reset V" />
-
-            <Button
-                android:id="@+id/c"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/blue"
-                android:layout_weight="0.25"
-                android:text="C"/>
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:background="@drawable/blue"
-                android:layout_weight="0.25"
-                android:id="@+id/d"
-                android:text="D" />
-        </LinearLayout>
 
     </LinearLayout>
 </LinearLayout>

@@ -4,8 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_height="wrap_content"
     android:layout_width="@dimen/flight_actions_container_width"
-    android:layout_gravity="center_horizontal"
-    android:visibility="gone">
+    android:layout_gravity="center_horizontal">
 
     <LinearLayout
         android:id="@+id/mc_disconnected_buttons"
@@ -17,7 +16,7 @@
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:background="?selectableItemBackground"
-        tools:visibility="gone"
+        tools:visibility="visible"
         >
 
         <Spinner
